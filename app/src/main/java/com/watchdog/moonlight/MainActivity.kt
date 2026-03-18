@@ -128,7 +128,7 @@ class MainActivity : AppCompatActivity() {
                     setClassName(MOONLIGHT_PACKAGE, MOONLIGHT_TRAMPOLINE)
                     putExtra("UUID", PC_UUID)
                     putExtra("Name", PC_NAME)
-                    putExtra("AppId", APP_ID)
+                    putExtra("AppId", APP_ID.toString())  // must be String
                     putExtra("AppName", APP_NAME)
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 })
